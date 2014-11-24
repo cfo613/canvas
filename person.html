@@ -1,0 +1,49 @@
+
+<!-- saved from url=(0026)file:///Users/Ciara/100_GA -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body>
+  <canvas id="canvas" width="1000" height="1000"></canvas>
+  <script>
+  var canvas = document.getElementById('canvas');
+  var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    //head
+    ctx.arc(75,75,50,0,Math.PI*2,true); // Outer circle
+    ctx.moveTo(110,75);
+    ctx.arc(75,75,35,0,Math.PI,false);   // Mouth (clockwise)
+    ctx.moveTo(65,65);
+    ctx.arc(60,65,5,0,Math.PI*2,true);  // Left eye
+    ctx.moveTo(95,65);
+    ctx.arc(90,65,5,0,Math.PI*2,true);  // Right eye
+    ctx.moveTo(75,75);
+    ctx.arc(75,75,5,0,Math.PI,false);   // Nose
+    //body
+    ctx.moveTo(75,125);
+    ctx.lineTo(75,225);                 // Body
+    ctx.moveTo(75,175);
+    ctx.lineTo(125,150);                // Right arm
+    ctx.moveTo(75,175);
+    ctx.lineTo(25,150);                 // Left arm
+    ctx.moveTo(75,225);
+    ctx.lineTo(125,300);                // Right leg
+    ctx.moveTo(125,300);
+    ctx.lineTo(150,275);                // Right foot
+    ctx.moveTo(75,225);
+    ctx.lineTo(25,300);                 // Left leg
+    ctx.moveTo(25,300);
+    ctx.lineTo(0,275);                  // Left foot
+    //hair
+    ctx.moveTo(40,40);
+    ctx.lineTo(30,30);                  // Hair 1
+    ctx.moveTo(57,29);
+    ctx.lineTo(50,17);                  // Hair 2
+    ctx.moveTo(75,25);
+    ctx.lineTo(75,12);                  // Hair 3
+    ctx.moveTo(92,29);
+    ctx.lineTo(99,17);                  // Hair 4
+    ctx.moveTo(110,40);
+    ctx.lineTo(120,30);                 // Hair 5
+    ctx.stroke();
+  </script>
+
+
+</body></html>
